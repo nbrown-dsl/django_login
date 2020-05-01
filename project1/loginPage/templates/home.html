@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<p>Name: {{user.first_name}} {{user.second_name}}</p> 
+<p>Username: {{user.username}} </p>      
+{% endif %}
+
+<H1>home page</H1>
+
+
+
+{% endblock %}
